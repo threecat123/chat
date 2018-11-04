@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg1"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/colorSpecialWhite"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:gravity="center_vertical|right"
+                android:text="账号"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/cellphone_number"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:hint="填入账号"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:gravity="center_vertical|right"
+                android:text="@string/string_pass_word"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:textSize="18dp"
+                android:hint="填入密码"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dvd_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dip"
+            android:text="登录"
+            android:onClick="Login"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dip"
+            android:text="注册"
+            android:onClick="Register"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
